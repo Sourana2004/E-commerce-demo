@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="checkout.css">
+    <title>Easykart.in</title>
+</head>
+<body>
+    <div class="addressBar">
+    <label class="heading">Enter your full Address:</label>
+    <input type="text" id="addressInput" placeholder="e.g.,vill/city,post,pin,dist">
+    <button id="submit-btn"onclick="displayAddress();">Submit</button>
+    </div>
+    <div id="displayedAddress"></div>
+    <button class="confirm-btn" onclick="confirmation();navigateBackToMainPage();">confirm</button>
+    <div id="confirmation_display"></div>
+    
+
+    <script>
+        function displayAddress() {
+            const enteredAddress = document.getElementById('addressInput').value;
+            document.getElementById('displayedAddress').textContent = `Entered Address: ${enteredAddress}`;
+        }
+        function confirmation(){
+         alert("your ordered has successfully recieved by Easycart!!!")
+         document.getElementById('confirmation_display').innerText= `order confirmed!!!`;
+        }
+
+
+        function navigateBackToMainPage() {
+        // Assuming you call this function after successfully placing an order
+        setTimeout(function() {
+            window.history.back();
+        }, 1000); // 1000 milliseconds (1 seconds)
+    }
+    
+</script>
+</body>
+</html>

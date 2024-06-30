@@ -1,0 +1,116 @@
+*{
+  margin : 0;
+  padding : 0;
+  box-sizing : border-box;
+}
+html,body{
+  width : 100%;
+  height: 100%;
+}
+.cart-items-container{
+  display:flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.cart-element{
+  width: 400px;
+  height: 460px;
+  background-color: #a3c3b7;
+  margin-bottom: 30px;
+  padding: 50px 100px;
+  margin-top: 50px;
+  border: 3px solid grey;
+
+}
+.cart-image{
+ height: 200px;
+ width: 200px;
+ margin-left: -70px;
+ margin-top: -40px;
+ border: 2px solid black;
+}
+.cart_product_name{
+  font-size: 20px;
+  font-weight: bolder;
+  margin-left: -70px;
+  color: rgb(242, 29, 121);
+}
+.cart_price{
+  margin-left: -70px;
+  margin-top: 10px;
+  color:#1a81e7;
+  font-weight: bolder;
+}
+.delivery_date{
+  margin-left: -70px;
+  font-size: 20px;
+  color: brown;
+  font-weight: bolder;
+}
+.return_period{
+  margin-right: 50px;
+  font-size: 20px;
+  color: rgb(73, 122, 66);
+  font-weight: bolder;
+}
+.remove-from-cart{
+  padding: 10px 30px;
+  margin-top: 20px;
+  background-color: #80afb7;
+  border:2px solid grey;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight:bolder;
+  font-size: 17px;
+  color: rgb(153, 11, 181);
+}
+
+/* bag summary */
+
+.bag-details-container{
+  background-color:#97b780;
+  height: 200px;
+  width: 100%;
+  margin-bottom: 30px;
+  border: 2px solid grey;
+  
+}
+
+.price-header{
+  font-size: 25px;
+  color:brown;
+  margin-left: 50px;
+
+}
+.mrp{
+  margin-left: 50px;
+  font-size: 20px;
+  font-weight: bold;
+  color:blueviolet ;
+}
+
+.total_amount{
+  margin-top: 10px;
+  margin-left: 50px;
+  font-size: 20px;
+  font-weight: bold;
+  color:rgba(231, 11, 99, 0.892);
+}
+.delivery_charges{
+  margin-left: 50px;
+  font-size: 20px;
+  font-weight: bold;
+  color:rgb(119, 107, 222);
+  border-bottom: 2px solid black;
+}
+
+.place_order_btn{
+  margin-top:30px;
+  margin-left: 45px;
+  width: 300px;
+  height: 40px;
+  background-color:#d15757 ;
+  font-size: 20px;
+  font-weight: bolder;
+  border-radius: 10px;
+}
